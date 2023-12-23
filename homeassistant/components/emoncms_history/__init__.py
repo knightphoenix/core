@@ -32,7 +32,7 @@ CONFIG_SCHEMA = vol.Schema(
             {
                 vol.Required(CONF_API_KEY): cv.string,
                 vol.Required(CONF_URL): cv.string,
-                vol.Required(CONF_INPUTNODE): cv.positive_int,
+                vol.Required(CONF_INPUTNODE): cv.string,
                 vol.Required(CONF_WHITELIST): cv.entity_ids,
                 vol.Optional(CONF_SCAN_INTERVAL, default=30): cv.positive_int,
             }
